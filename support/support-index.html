@@ -1,0 +1,524 @@
+<!--
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<!doctype html>
+<html lang="en">
+<!--
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+  
+  
+  
+
+<head>
+  <meta charset="utf-8">
+  
+    <title>Support | Hyperledger Composer</title>
+  
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/x-icon" href="/develop/favicon.ico">
+  <meta name="google-site-verification" content="fBQRJ6h7MV7_TJ7grbgq4P-d-07NRfDWPe4pqEEoH5w">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  
+
+  
+    <link href="/develop/assets/css/normalize.css" rel="stylesheet">
+    <link href="/develop/assets/css/new-style.min.css" rel="stylesheet">
+    <link href="/develop/assets/css/grid-layout.min.css" rel="stylesheet">
+    <link href="/develop/assets/css/duo.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.6.0/clipboard.min.js"></script>
+  
+
+  
+</head>
+
+
+<body class="">
+
+  
+  <!-- % include navbar.html % -->
+  
+
+  <div class="SiteWrapper">
+    
+      <!--
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<div class="content">
+    <article class="docs-container">
+        <!-- If there's a sidebar, divide into 2 columns -->
+        
+        <div class="page-sidebar-grid" id="off-canvas">
+          <!-- <a class="toggle close" href="#">close</a> -->
+          <div class="docs-pagenav-grid">
+            <!-- Navigation -->
+  <nav class="navbar-docs" role="navigation">
+        <!-- Just show the product name -->
+            <p class="navbar-brand">IBM Blockchain Platform: <b>Develop</b></p>
+
+</nav>
+
+          </div>
+
+          <select id="version" name="version" onchange="location = this.options[this.selectedIndex].value;">
+              <option>Select version</option>
+              <option value="/composer/latest/introduction/introduction.html" title="The most stable version of Composer">Latest</option>
+              <option value="/composer/unstable/introduction/introduction.html" title="The version that will replace Latest">Latest-unstable</option>
+          </select>
+
+            <div class="search-form">
+              <form action="/develop/search/search.html" method="get">
+                <!-- <label for="search-box">Search</label> -->
+
+                <input type="text" id="search-box"  class="search-box" name="query" placeholder="Search here...">
+                <input type="submit" class="submit-input hide" value="">
+
+                <div class="search-icon">
+                  <img src="/develop/assets/img/Search_Icon_1.svg" class="trigger" type="submit">
+                </div>
+              </form>
+            </div>
+
+          <div class="docs-current-page-grid">
+          <p>Support</p>
+          </div>
+
+          <nav class="context-nav">
+            
+            
+              <ul>
+<li><p><a href="/develop/"><b>Introduction</b><img src="/develop/assets/img/Caret_SW_2.svg" class="caret"></a></p>
+
+<ul>
+<li><a href="/develop/introduction/key-concepts">Key Concepts</a></li>
+<li><a href="/develop/introduction/solution-architecture">Typical Solution Architecture</a></li>
+</ul></li>
+<li><p><a href="/develop/installing/installing-index"><b>Installing</b><img src="/develop/assets/img/Caret_SW_2.svg" class="caret"></a></p>
+
+<ul>
+<li><a href="/develop/installing/installing-prereqs">Installing pre-requisites</a></li>
+<li><a href="/develop/installing/development-tools">Installing the development environment</a></li>
+<li><a href="/develop/installing/update-dev-env">Updating the development environment</a></li>
+<li><a href="/develop/installing/uninstall-dev-env">Uninstalling the development environment</a></li>
+</ul></li>
+<li><p><a href="/develop/tutorials/tutorials"><b>Tutorials</b><img src="/develop/assets/img/Caret_SW_2.svg" class="caret"></a></p>
+
+<ul>
+<li><a href="/develop/tutorials/playground-tutorial">Playground Tutorial</a></li>
+<li><a href="/develop/tutorials/developer-tutorial">Developer Tutorial</a></li>
+<li><a href="/develop/tutorials/queries">Queries Tutorial</a></li>
+<li><a href="/develop/tutorials/deploy-to-fabric-single-org">Deploying to a single organization Hyperledger Fabric</a></li>
+<li><a href="/develop/tutorials/deploy-to-fabric-multi-org">Deploying to a multi-organization Hyperledger Fabric</a></li>
+<li><a href="/develop/tutorials/invoke-composer-network">Interacting with other business networks</a></li>
+<li><a href="/develop/tutorials/acl-trading">Access Control Tutorial - Commodity Trading</a></li>
+<li><a href="/develop/tutorials/google_oauth2_rest">Using Google OAUTH2.0 with a Composer REST server</a></li>
+</ul></li>
+<li><p><a href="/develop/playground/playground-index"><b>Using Playground</b><img src="/develop/assets/img/Caret_SW_2.svg" class="caret"></a></p>
+
+<ul>
+<li><a href="/develop/playground/id-cards-playground">Business Network Cards</a></li>
+</ul></li>
+<li><p><a href="/develop/business-network/business-network-index"><b>Developing Business Networks</b><img src="/develop/assets/img/Caret_SW_2.svg" class="caret"></a></p>
+
+<ul>
+<li><a href="/develop/business-network/businessnetworkdefinition">Business Network Definitions</a></li>
+<li><a href="/develop/business-network/bnd-create">Create a Business Network Definition</a></li>
+<li><a href="/develop/business-network/bnd-deploy">Deploying Business Networks</a></li>
+<li><a href="/develop/business-network/publishing-events">Emitting Events</a></li>
+<li><a href="/develop/business-network/testing">Testing Business Networks</a></li>
+<li><a href="/develop/business-network/bnd-publish">Publish Models or Business Network Definitions</a></li>
+<li><a href="/develop/business-network/upgrading-bna">Upgrading a deployed business network</a></li>
+<li><a href="/develop/business-network/query">Using Queries and Filters with Business Network Data</a></li>
+<li><a href="/develop/business-network/programmatic-access-control">Programmatic access control</a></li>
+<li><a href="/develop/business-network/historian">Hyperledger Composer Historian</a></li>
+<li><a href="/develop/business-network/cloud-wallets">Customising card stores</a></li>
+</ul></li>
+<li><p><a href="/develop/applications/applications-index"><b>Developing Applications</b><img src="/develop/assets/img/Caret_SW_2.svg" class="caret"></a></p>
+
+<ul>
+<li><a href="/develop/applications/node">Writing a Node.js application</a></li>
+<li><a href="/develop/applications/web">Writing Web applications</a></li>
+<li><a href="/develop/applications/subscribing-to-events">Subscribing to events</a></li>
+</ul></li>
+<li><p><a href="/develop/integrating/integrating-index"><b>Integrating Existing Systems</b><img src="/develop/assets/img/Caret_SW_2.svg" class="caret"></a></p>
+
+<ul>
+<li><a href="/develop/integrating/getting-started-rest-api">Generating a REST API</a></li>
+<li><a href="/develop/integrating/publishing-events">Publishing events from the REST server</a></li>
+<li><a href="/develop/integrating/enabling-rest-authentication">Enabling authentication for the REST server</a></li>
+<li><a href="/develop/integrating/enabling-multiuser">Enabling multiple user mode for the REST server</a></li>
+<li><a href="/develop/integrating/securing-the-rest-server">Securing the REST server using HTTPS and TLS</a></li>
+<li><a href="/develop/integrating/deploying-the-rest-server">Deploying the REST server for a business network</a></li>
+<li><a href="/develop/integrating/node-red">Integrating with Node-RED</a></li>
+<li><a href="/develop/integrating/call-out">Calling external HTTP or REST services</a></li>
+</ul></li>
+<li><p><a href="/develop/managing/managingindex"><b>Managing a Deployed Business Network</b><img src="/develop/assets/img/Caret_SW_2.svg" class="caret"></a></p>
+
+<ul>
+<li><a href="/develop/managing/participantsandidentities">Participants and identities</a></li>
+<li><a href="/develop/managing/participant-add">Adding participants</a></li>
+<li><a href="/develop/managing/id-cards-playground">Creating, Exporting, and Importing Business Network Cards</a></li>
+<li><a href="/develop/managing/identity-issue">Issuing a new identity to a participant</a></li>
+<li><a href="/develop/managing/identity-bind">Binding an existing identity to a participant</a></li>
+<li><a href="/develop/managing/identity-list">Listing all identities in a business network</a></li>
+<li><a href="/develop/managing/identity-revoke">Revoking an identity from a participant</a></li>
+<li><a href="/develop/managing/connector-information">Interacting with Hyperledger Fabric</a></li>
+</ul></li>
+<li><p><a href="/develop/problems/diagnostics"><b>Diagnosing Problems</b><img src="/develop/assets/img/Caret_SW_2.svg" class="caret"></a></p></li>
+<li><p><a href="/develop/reference/reference-index"><b>Reference</b><img src="/develop/assets/img/Caret_SW_2.svg" class="caret"></a></p>
+
+<ul>
+<li><a href="/develop/reference/MeetTheModules">Hyperledger Composer npm Modules</a></li>
+<li><a href="/develop/reference/cto_language">Modeling Language</a></li>
+<li><a href="/develop/reference/acl_language">Access Control Language</a></li>
+<li><a href="/develop/reference/query-language">Query Language</a></li>
+<li><a href="/develop/reference/model-compatibility">Model Compatibility</a></li>
+<li><a href="/develop/reference/connectionprofile">Connection Profiles</a></li>
+<li><a href="/develop/reference/js_scripts">Transaction Processor Functions</a></li>
+<li><a href="/develop/reference/commands">Hyperledger Composer CLI Commands</a></li>
+<li><a href="/develop/reference/rest-server">Hyperledger Composer REST Server</a></li>
+<li><a href="/develop/reference/glossary">Hyperledger Composer Glossary of Terms</a></li>
+</ul></li>
+<li><p><a href="/develop/support/support-index"><b>Support</b><img src="/develop/assets/img/Caret_SW_2.svg" class="caret"></a></p></li>
+<li><p><a href="/develop/api/api-doc-index"><b>API Reference</b><img src="/develop/assets/img/Caret_SW_2.svg" class="caret"></a></p>
+
+<ul>
+<li><a href="/develop/api/allData">API Class Index</a></li>
+<li><a href="/develop/api/admin-adminconnection">AdminConnection (Admin API)</a></li>
+<li><a href="/develop/api/client-assetregistry">AssetRegistry (Client API)</a></li>
+<li><a href="/develop/api/client-businessnetworkconnection">BusinessNetworkConnection (Client API)</a></li>
+<li><a href="/develop/api/client-historian">Historian (Client API)</a></li>
+<li><a href="/develop/api/client-identityregistry">IdentityRegistry (Client API)</a></li>
+<li><a href="/develop/api/client-participantregistry">ParticipantRegistry (Client API)</a></li>
+<li><a href="/develop/api/client-query">Query (Client API)</a></li>
+<li><a href="/develop/api/client-registry">Registry (Client API)</a></li>
+<li><a href="/develop/api/client-transactionregistry">TransactionRegistry (Client API)</a></li>
+<li><a href="/develop/api/common-assetdeclaration">AssetDeclaration (Common API)</a></li>
+<li><a href="/develop/api/common-businessnetworkcardstore">BusinessNetworkCardStore (Common API)</a></li>
+<li><a href="/develop/api/common-businessnetworkdefinition">BusinessNetworkDefinition (Common API)</a></li>
+<li><a href="/develop/api/common-businessnetworkmetadata">BusinessNetworkMetadata (Common API)</a></li>
+<li><a href="/develop/api/common-classdeclaration">ClassDeclaration (Common API)</a></li>
+<li><a href="/develop/api/common-conceptdeclaration">ConceptDeclaration (Common API)</a></li>
+<li><a href="/develop/api/common-concept">Concept (Common API)</a></li>
+<li><a href="/develop/api/common-enumdeclaration">EnumDeclaration (Common API)</a></li>
+<li><a href="/develop/api/common-enumvaluedeclaration">EnumValueDeclaration (Common API)</a></li>
+<li><a href="/develop/api/common-eventdeclaration">EventDeclaration (Common API)</a></li>
+<li><a href="/develop/api/common-factory">Factory (Common API)</a></li>
+<li><a href="/develop/api/common-functiondeclaration">FunctionDeclaration (Common API)</a></li>
+<li><a href="/develop/api/common-idcard">IdCard (Common API)</a></li>
+<li><a href="/develop/api/common-identifiable">Identifiable (Common API)</a></li>
+<li><a href="/develop/api/common-introspector">Introspector (Common API)</a></li>
+<li><a href="/develop/api/common-modelfile">ModelFile (Common API)</a></li>
+<li><a href="/develop/api/common-modelmanager">ModelManager (Common API)</a></li>
+<li><a href="/develop/api/common-participantdeclaration">ParticipantDeclaration (Common API)</a></li>
+<li><a href="/develop/api/common-property">Property (Common API)</a></li>
+<li><a href="/develop/api/common-relationshipdeclaration">RelationshipDeclaration (Common API)</a></li>
+<li><a href="/develop/api/common-relationship">Relationship (Common API)</a></li>
+<li><a href="/develop/api/common-resource">Resource (Common API)</a></li>
+<li><a href="/develop/api/common-serializer">Serializer (Common API)</a></li>
+<li><a href="/develop/api/common-transactiondeclaration">TransactionDeclaration (Common API)</a></li>
+<li><a href="/develop/api/common-typed">Typed (Common API)</a></li>
+<li><a href="/develop/api/common-validatedconcept">ValidatedConcept (Common API)</a></li>
+<li><a href="/develop/api/common-validatedresource">ValidatedResource (Common API)</a></li>
+<li><a href="/develop/api/runtime-api">Api (Runtime API)</a></li>
+<li><a href="/develop/api/runtime-assetregistry">AssetRegistry (Runtime API)</a></li>
+<li><a href="/develop/api/runtime-factory">Factory (Runtime API)</a></li>
+<li><a href="/develop/api/runtime-participantregistry">ParticipantRegistry (Runtime API)</a></li>
+<li><a href="/develop/api/runtime-query">Query (Runtime API)</a></li>
+<li><a href="/develop/api/runtime-serializer">Serializer (Runtime API)</a></li>
+</ul></li>
+<li><p><a href="/develop/systemns/systemns-index"><b>System Namespace Reference</b><img src="/develop/assets/img/Caret_SW_2.svg" class="caret"></a></p>
+
+<ul>
+<li><a href="/develop/systemns/01_summary">Summary</a></li>
+<li><a href="/develop/systemns/02_assets">Assets</a></li>
+<li><a href="/develop/systemns/03_participants">Participants</a></li>
+<li><a href="/develop/systemns/04_transactions">Transactions</a></li>
+<li><a href="/develop/systemns/05_events">Events</a></li>
+<li><a href="/develop/systemns/06_enums">Enums</a></li>
+</ul></li>
+</ul>
+
+            
+                <div class="docs-footer-grid">
+                <div class="footer-bg-break docs-footer-break">
+<div class="footer-container-break">
+    <div class="footer-left-break">
+      <p>View the <a href="http://www14.software.ibm.com/cgi-bin/weblap/lap.pl?li_formnum=L-MCAE-ATLKDW&title=IBM%20Blockchain%20Platform:%20Develop">license information</a></p>
+    </div>
+</div>
+</div>
+
+                </div>
+          </nav>
+        </div>
+        <div class="page-content-grid">
+          <section class="content-chunk">
+            <!-- <a class="toggle open" href="#nav">open</a> -->
+            
+              <h1 id="get-support">Get Support</h1>
+
+<h2 id="ibm-support">IBM Support</h2>
+
+<p>IBM Blockchain provides a fully integrated platform designed to accelerate developing, governing, and operating a multi-organization business network.  You can access support using the Platform via the following options:</p>
+
+<ul>
+<li>If you use the IBM Blockchain Platform service on IBM Cloud, you can raise a ticket via <a href="https://www.ibm.com/cloud/support">IBM Cloud Support</a>.</li>
+<li><a href="https://www.ibm.com/blockchain/hyperledger-fabric-support.html">IBM Premium Blockchain Support</a> is available by request.</li>
+</ul>
+
+<blockquote>
+<p>Before seeking support, please ensure you are running a <a href=#soe>Supported Operating Environment</a> by reviewing the statement at the bottom of this page.</p>
+</blockquote>
+
+<h2 id="talk-to-the-community">Talk to the Community</h2>
+
+<p>For those who do not have a paid support plan, here are some options for engaging with other developers in the community:</p>
+
+<ul>
+<li>Find learning materials on <a href="https://developer.ibm.com/blockchain/">developerWorks</a></li>
+<li>Ask a question on <a href="https://stackoverflow.com/questions/tagged/hyperledger-composer">StackOverflow</a></li>
+<li>Discuss with experts on <a href="https://chat.hyperledger.org/channel/composer">Rocket.Chat</a></li>
+</ul>
+
+<p><a name="soe"></a></p>
+
+<h1 id="supported-operating-environments">Supported Operating Environments</h1>
+
+<h2 id="ibm-blockchain-platform">IBM Blockchain Platform</h2>
+
+<p>The Develop component of the IBM Blockchain Platform is supported for use with and deployment to all IBM Blockchain Platform environments.</p>
+
+<h2 id="operating-systems">Operating systems</h2>
+
+<p>The following operating systems are supported for use with IBM Blockchain Platform: Develop.</p>
+
+<table><thead>
+<tr>
+<th>Operating system</th>
+<th>Architecture(s)</th>
+<th>Version(s)</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Ubuntu Linux</td>
+<td>x86-64</td>
+<td>16.04 LTS</td>
+</tr>
+<tr>
+<td>macOS</td>
+<td>x86-64</td>
+<td>Sierra (10.12), High Sierra (10.13)</td>
+</tr>
+</tbody></table>
+
+<p>These operating systems are supported for use when installing IBM Blockchain Platform: Develop components using either npm modules or Docker images.</p>
+
+<h2 id="cloud-environments">Cloud environments</h2>
+
+<p>The following cloud environments are supported for use with IBM Blockchain Platform: Develop components.</p>
+
+<table><thead>
+<tr>
+<th>Platform/cloud</th>
+<th>Service</th>
+<th>Comments</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>IBM Cloud</td>
+<td>Container Service</td>
+<td>IBM-signed Docker images must be used. Sample Kubernetes scripts are provided.</td>
+</tr>
+</tbody></table>
+
+<h2 id="docker">Docker</h2>
+
+<p>The following versions of Docker are supported for use with the Docker images for IBM Blockchain Platform: Develop, as long as Docker is running on a supported operating system or cloud environment.</p>
+
+<table><thead>
+<tr>
+<th>Component</th>
+<th>Architecture(s)</th>
+<th>Version(s)</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Docker Engine</td>
+<td>x86-64</td>
+<td>17.03 or higher</td>
+</tr>
+<tr>
+<td>Docker Compose</td>
+<td>x86-64</td>
+<td>1.8 or higher</td>
+</tr>
+</tbody></table>
+
+<h2 id="node-js-and-npm">Node.js and npm</h2>
+
+<p>The following versions of Node.js and npm are supported for use with the npm modules for IBM Blockchain Platform: Develop, as long as Node.js and npm are running on a supported operating system or cloud environment:</p>
+
+<table><thead>
+<tr>
+<th>Component</th>
+<th>Architecture(s)</th>
+<th>Version(s)</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>IBM SDK for Node.js</td>
+<td>x86-64</td>
+<td>v8.9.0.0 or higher</td>
+</tr>
+<tr>
+<td>npm</td>
+<td>x86-64</td>
+<td>v5.5.1 or higher</td>
+</tr>
+</tbody></table>
+
+<p>IBM SDK for Node.js can be downloaded from IBM: <a href="https://developer.ibm.com/node/sdk/v8/">https://developer.ibm.com/node/sdk/v8/</a></p>
+
+<p>Please note that the IBM SDK for Node.js includes a supported version of npm, and npm does not need to be installed separately.</p>
+
+<h2 id="web-browsers">Web browsers</h2>
+
+<p>The following web browsers are supported for use with the web components of IBM Blockchain Platform: Develop; including the playground, the REST API explorer, and the generated web application:</p>
+
+<table><thead>
+<tr>
+<th>Browser</th>
+<th>Mozilla Firefox</th>
+<th>Google Chrome</th>
+<th>Safari</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Version(s)</td>
+<td>57 or higher</td>
+<td>62 or higher</td>
+<td>11 or higher</td>
+</tr>
+</tbody></table>
+
+<p>Mobile web browsers, including mobile variants of the above browsers, are not currently supported.</p>
+
+<h2 id="editor-plugins">Editor plugins</h2>
+
+<p>IBM Blockchain Platform: Develop plugins are provided and supported for the following editors and versions:</p>
+
+<table><thead>
+<tr>
+<th>Editor</th>
+<th>Version(s)</th>
+<th>Plugin link</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Atom</td>
+<td>v1.20 or higher</td>
+<td><a href="https://atom.io/packages/composer-atom-plugin">Hyperledger Composer package</a></td>
+</tr>
+<tr>
+<td>Visual Studio Code</td>
+<td>v1.16 or greater</td>
+<td><a href="https://marketplace.visualstudio.com/items?itemName=HyperledgerComposer.composer-support-client">Hyperledger Composer extension</a></td>
+</tr>
+</tbody></table>
+
+            
+          </section>
+        </div>
+        <!-- Otherwise, have the main content fill all 12 columns... -->
+        
+      <div class="PageNavigation">
+    
+    
+  </div>
+    </article>
+</div>
+<script>
+(function (document) {
+    function clipboard_init() {
+        var charts = document.querySelectorAll("div.highlight"),
+            arr = [],
+            i, j, maxItem, pre, btn, el;
+
+        // Make sure we are dealing with an array
+        for(i = 0, maxItem = charts.length; i < maxItem; i++) arr.push(charts[i]);
+
+        // Find the UML source element and get the text
+        for (i = 0, maxItem = arr.length; i < maxItem; i++) {
+            el = arr[i];
+            pre = el.childNodes[0];
+
+            pre.id = "hl_code" + i.toString();
+            btn = document.createElement('copy-button');
+            btn.appendChild(document.createTextNode('Copy'));
+            btn.setAttribute("class", "copy-btn");
+            btn.setAttribute("data-clipboard-target", "#hl_code" + i.toString());
+            el.insertBefore(btn, pre);
+        }
+        new Clipboard('.copy-btn');
+    };
+
+    function onReady(fn) {
+        if (document.addEventListener) {
+            document.addEventListener('DOMContentLoaded', fn);
+        } else {
+            document.attachEvent('onreadystatechange', function() {
+                if (document.readyState === 'interactive')
+                    fn();
+            });
+        }
+    }
+
+    onReady(function(){
+        clipboard_init();
+    });
+})(document);
+</script>
+<script src="/develop/assets/js/nav.js"></script>
+<script src="/develop/assets/js/search_bar.js"></script>
+
+    
+
+    
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,232 @@
+// Plex imports
+
+@font-face {
+    font-family: "ibm-plex-sans";
+    src: url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-light.woff") format("woff"),url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "ibm-plex-sans";
+    src: url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-regular.woff") format("woff"),url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "ibm-plex-sans";
+    src: url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-medium.woff") format("woff"),url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "ibm-plex-sans";
+    src: url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-semibold.woff") format("woff"),url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-semibold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "ibm-plex-sans";
+    src: url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-bold.woff") format("woff"),url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexsans-bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "ibm-plex-mono";
+    src: url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexmono-regular.woff") format("woff"),url("https://1.www.s81c.com/common/fonts/plex/v1/ibmplexmono-regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal
+}
+
+$font-stack: 'ibm-plex-sans', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$display-font: 'ibm-plex-sans';
+$svg-font: 'ibm-plex-mono', 'Source Code Pro';
+$primary-text: #22292E; //Duo
+$secondary-text: #8C9696;
+$first-highlight: #003BC9; //Duo
+$second-highlight: #5068C2;
+$third-highlight: #F9F9F9;
+$fourth-highlight: #F1F3F7;
+$fifth-highlight: #B8C1C1;
+$sixth-highlight: #2D3D7D;
+$error-colour-1: #FF5C49;
+$error-colour-2: #F7E6E6;
+$success-colour: #40d5bb;
+$keyline-highlight: #E3ECEC;
+$white: #FDFDFD;
+$black: #000000;
+$callout: #FFD640;
+
+//Duo
+$duo-cream: #F8F4F2;
+
+html {
+  h1, h2, h3, p, ul, li, button, a, body {
+    font-family: $font-stack !important;
+  }
+  code {
+    font-family: $svg-font !important;
+  }
+
+  b, strong {
+    font-weight: 500;
+  }
+}
+
+.docs-container {
+  .page-sidebar-grid {
+    background-color: $duo-cream;
+
+// sidebar
+
+.context-nav {
+
+  ul {
+    padding-left: 0;
+    margin: 0;
+
+  li {
+    list-style: none;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s;
+    background-color: $white;
+    &.hide {
+        height: 4rem !important;
+        background-color: transparent;
+    }
+    &:hover {
+      &:after {
+          content: " ";
+          position: absolute;
+          top: 0;
+          right: 0px;
+          bottom: 0;
+          background-color: $first-highlight;
+      }
+    }
+    &.active {
+      height: auto !important;
+      border-left-color: $first-highlight;
+      &:after {
+          content: " ";
+          position: absolute;
+          top: 0;
+          right: 0px;
+          bottom: 0;
+          background-color: $first-highlight;
+      }
+    }
+    &.activeBorder {
+      border-right: 3px solid $first-highlight;
+      transition: none;
+      background-color: $white;
+    }
+    a {
+      padding-left: 2rem;
+      padding-right: 1rem;
+      display: block;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      &.active {
+        color: $primary-text;
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+      margin-left: 0rem;
+      margin-top: 1rem;
+      padding-bottom: 2rem;
+      &:hover {
+        &:after {
+            content: " ";
+            position: absolute;
+            top: 0;
+            right: 0px;
+            bottom: 0;
+            background-color: $first-highlight;
+        }
+      }
+
+      li {
+        border-bottom: none;
+        border-left: 3px solid $white;
+        background-color: $white;
+        &:hover {
+          border-left: 3px solid $first-highlight;
+          border-right: none;
+        }
+      }
+    }
+  }
+
+  .caret {
+    float: right;
+    width: 13px;
+    height: 13px;
+    padding: 10px;
+    margin-top: -10px;
+    &.hidden {
+      visibility: hidden;
+    }
+  }
+
+}
+
+  a {
+    text-decoration: none;
+    color: $primary-text;
+    font-size: 0.9rem;
+  }
+}
+
+// Footer
+
+.context-nav {
+  .docs-footer-grid {
+    ul {
+      li {
+        background-color: transparent !important;
+      }
+    }
+  }
+}
+
+// Search box
+
+.search-form {
+  .search-box {
+    background-color: transparent;
+  }
+}
+
+
+}
+
+.page-content-grid {
+  background-color: $white;
+  .content-chunk {
+    a {
+      color: $first-highlight !important;
+    }
+
+    blockquote {
+      border-left-color: $first-highlight !important;
+      background-color: $duo-cream !important;
+    }
+
+    table {
+      border-left: 3px solid $first-highlight;
+      text-align: left;
+    }
+  }
+}
+
+}
